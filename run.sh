@@ -13,4 +13,4 @@ killPython()
 killPython
 cd $WORKSPACE
 python3 orderServer.py &
-sleep 3
+sleep 2
