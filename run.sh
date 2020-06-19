@@ -1,6 +1,6 @@
 killPython()
 {
-    pid=`ps -ef | grep "python_order/orderServer.py" | grep -v grep | awk '{print $2}'`
+    pid=`ps -ef | grep "orderServer.py" | grep -v grep | awk '{print $2}'`
     echo "python server Id list :$pid"
     if [ "$pid" = "" ]
     then
@@ -12,5 +12,5 @@ killPython()
 
 killPython
 cd $WORKSPACE
-python3 orderServer.py &
+python orderServer.py &
 sleep 2
