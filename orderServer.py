@@ -237,6 +237,7 @@ def confirm():
             "code": "200",
             "message": "Order success.",
             "total": 7
+            "total_price": 14.0
         }
         not login : http code 401
         {
