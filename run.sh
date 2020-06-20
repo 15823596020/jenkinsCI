@@ -11,6 +11,5 @@ killPython()
 }
 
 killPython
-#cd $WORKSPACE
 python orderServer.py &
 sleep 2
