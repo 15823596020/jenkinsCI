@@ -286,18 +286,18 @@ def logout():
 
         if access_token not in user_token_dic.values():
             print('access_token error, logout failed.')
-            login_fail_resp_data = {
+            logout_fail_resp_data = {
                 "code": "401",
                 "message": "Unknown user info, logout fail."
             }
-            return make_response(jsonify(login_fail_resp_data), '401')
+            return make_response(jsonify(logout_fail_resp_data), '401')
 
-        login_succ_resp_data = {
+        logout_succ_resp_data = {
             "code": "200",
             "message": "logout success"
         }
 
-        return make_response(jsonify(login_succ_resp_data), '200')
+        return make_response(jsonify(logout_succ_resp_data), '200')
     except Exception:
         return make_response(jsonify(server_internal_error_data), '500')
 
